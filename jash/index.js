@@ -380,7 +380,7 @@ bot.action("/done", async (ctx) => {
 bot.hears("g", async (ctx) => {
   try {
     const app = await db.collection("admin").findOne({ group: "global" });
-    if (app.length === 0 || !app?.dailybonus || app?.dailybonus === "0") {
+    if (app.length === 0 || !app.dailybonus || app.dailybonus === "0") {
       return;
     }
     let joinCheck = await findUser(ctx);

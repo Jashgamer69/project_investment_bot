@@ -400,7 +400,7 @@ bot.hears("g", async (ctx) => {
       if (duration_in_hours >= 24) {
         let bal = await db.collection("balance").find({ userId: ctx.from.id }).toArray();
 
-        let dBon = app?.dailybonus;
+        let dBon = app.dailybonus;
         let ran = dBon;
         let rann = ran * 1;
         var adm = bal[0].balance * 1;

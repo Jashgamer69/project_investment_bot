@@ -585,7 +585,7 @@ bot.action(/^\Confirm/, async (ctx) => {
     ctx.deleteMessage()
     let bal = await db.collection("balance").find({ userId: ctx.from.id }).toArray();
                 var g = await db.collection('withdrawals').find({group:"totald"}).toArray();
-    var tadd = parseFloat(g)+parseFloat(invest)
+    var tadd = parseFloat(g + invest)
 db.collection('withdrawals').updateOne({group: 'total'},{$set:{totald: tadd}},{upsert:true})
     var ded = parseFloat(bal[0].balance) - parseFloat(invest)
     db.collection('balance').updateOne({ userId: ctx.from.id }, { $set: { balance: ded } }, { upsert: true });

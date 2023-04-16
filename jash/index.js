@@ -365,7 +365,7 @@ BurgerSwap Ultimate Daily
 bot.action("/deposit", async (ctx) => {
   await ctx.deleteMessage();
   var dep = [[{ text: "🛎 Done", callback_data: "/done" }]]
- ctx.reply('*🚦 Kindly Send  TRX To*.\n\n`+'+env.address+'`\n\n_After Paying Click Button_👇👇\n\n*⚠ If you send less than 2.00 TRX, your deposit will be ignored!*',{parse_mode:"markdown",reply_markup:{ inline_keyboard : dep }})
+ ctx.reply('*🚦 Kindly Send  TRX To*.\n\n`'+env.address+'`\n\n_After Paying Click Button_👇👇\n\n*⚠ If you send less than 2.00 TRX, your deposit will be ignored!*',{parse_mode:"markdown",reply_markup:{ inline_keyboard : dep }})
      
 })
 bot.action("/done", async (ctx) => {

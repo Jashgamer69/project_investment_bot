@@ -435,7 +435,7 @@ bot.hears("🛰 Liquidity",
     try {
       const dep = await db.collection('withdrawals').find({ group: "total" }).toArray();
       const bs = await db.collection('reinvest').find({ group:"invest" }).toArray();
-let x = ""
+let x = 0
 
       for (var i = 0; i < bs.length; i++) {
       x += parseFloat(bs[i].amount)}

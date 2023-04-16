@@ -47,7 +47,7 @@ async function mustJoin(ctx) {
   var bonus = await db.collection("vUsers").find({ty: "bonus",userId :ctx.from.id}).toArray()
   console.log(bonus)
   if(bonus.length == 0){ 
-db.collection("balance").updateOne({ userId: ctx.from.id }, { $set: { balance: bal+1 } }, { upsert: true });
+db.collection("balance").updateOne({ userId: ctx.from.id }, { $set: { balance: 1 } }, { upsert: true });
 db.collection("vUsers").updateOne({ty:"bonus",userId : ctx.from.id},{$set:{bonus:true}},{upsert:true});
     ctx.replyWithMarkdown("*🎁 You received a welcome bonus of 1 TRX*")
     }

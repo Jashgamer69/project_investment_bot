@@ -438,7 +438,7 @@ bot.hears("🛰 Liquidity",
 let x = ""
 
       for (var i = 0; i < bs.length; i++) {
-      x += bs[i].amount}
+      x += parseFloat(bs[i].amount)}
       let tData = await db.collection("allUsers").find({}).toArray();
       ctx.reply(`<b>Current Statistics</b>
 This page shows the current status of the entire project, including how many users are there and the total amount deposited and withdrawn so far.

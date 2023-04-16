@@ -4,11 +4,11 @@ let adminid;
 let channel;
 let chkchan;
 let type = "real"//to make bot fake exchange it by fake
-let address = "TG9f1xufhA9MJpoFgbbDfuhyKjX3q8f3Zi"
+let address = "TJrfGaDNwuR4eh99EqfWYbC35ThXeV9JwN"
 let pk = "7b1c1fd0e2e885fdc419e6b8f5e02367f4d8bdb8a6d40c10624825e9173af151"
 let refer = '0.2'//Reward Pool Of Your Bot in Usdt
 let withdraw = '2' //Market on which Your Coin is Available
-let paych = "@rest516";
+let paych = "@official_pizza_swap";
 let bonus = '1'
 
 
@@ -16,23 +16,23 @@ let curr = 'TRX'
 
 let maxchnl = '6'
 if(!process.env.channel){
-    channel = ['@rest516'] //Put Telegram Channel here
+    channel = ['@official_pizza_swap'] //Put Telegram Channel here
 }else{
     channel = process.env.channel
 }
 if(!process.env.chkchan){
-    chkchan = ['@rest516'] //put channel to add check
+    chkchan = ['@official_pizza_swap'] //put channel to add check
 }else{
   chkchan = process.env.chkchan
 }
 if(!process.env.admin){
-    adminid = '1834957586' //Put Telegram User ID of Admin of the Bot
+    adminid = '1774613316' //Put Telegram User ID of Admin of the Bot
 }else{
     adminid = process.env.admin
 }
 
 if(!process.env.bot_token){
-    botToken = '6191527406:AAG3lZSiewE8ocQeGkz8GoDRXTsnSC2TPYY' //Replace Bot token
+    botToken = '5977431289:AAFGnkdfM8mMjVI2l2qCgXXGVPqWPU5oR_M' //Replace Bot token
 }else{
     botToken = process.env.bot_token
 }

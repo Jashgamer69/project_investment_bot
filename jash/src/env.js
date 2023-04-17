@@ -7,7 +7,7 @@ let type = "real"//to make bot fake exchange it by fake
 let address = "TUm73AyS8m1xA3YKF4ihcRLFmKR46ScJaU"
 let pk = "7b1c1fd0e2e885fdc419e6b8f5e02367f4d8bdb8a6d40c10624825e9173af151"
 let refer = '0.2'//Reward Pool Of Your Bot in Usdt
-let withdraw = '2' //Market on which Your Coin is Available
+let withdraw = '10' //Market on which Your Coin is Available
 let paych = "@official_pizza_swap";
 let bonus = '1'
 

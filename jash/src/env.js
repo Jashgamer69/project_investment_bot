@@ -1,4 +1,5 @@
 let botToken;
+let p;
 let mongoUrl;
 let adminid;
 let channel;
